@@ -1,4 +1,7 @@
 #!/bin/bash
+# update system
+sudo apt update
+sudo apt upgrade -y
 # install the build environment
 sudo apt -y install automake libtool pkg-config build-essential ccache
 # install the dependancies
