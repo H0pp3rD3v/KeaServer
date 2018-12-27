@@ -7,7 +7,7 @@ export PKG_CONFIG_PATH=/usr/local/lib64/pkgconfig
 # export CC="ccache gcc" CXX="ccache g++"
 declare -x PATH="/usr/lib64/ccache:$PATH"
 autoreconf --install
-./configure --with-dhcp-mysql
+./configure --with-mysql
 make -j4
 sudo make install
 echo "/usr/local/lib/hooks" > /etc/ld.so.conf.d/kea.conf
